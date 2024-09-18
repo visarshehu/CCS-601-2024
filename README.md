@@ -13,7 +13,7 @@ Repozitori është i organizuar nëpër direktoriume, ku secili direktorium për
 Që ta ekzekutoni kodin, duhet të hyni në direktoriumin përkatës dhe të instaloni libraritë e nevojshme (vite dhe three). P.sh.:
 
 ```
-cd Java I
+cd "Java I"
 npm install vite
 npm install three
 ```
