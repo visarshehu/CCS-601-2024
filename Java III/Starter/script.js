@@ -25,5 +25,15 @@ scene.add(camera);
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(800, 600);
+
 document.getElementById("scene").appendChild(renderer.domElement);
 
+const clock = new THREE.Clock();
+const animate = () => {
+    const elapsedTime = clock.getElapsedTime();
+    sphere.rotation.y += elapsedTime;
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+}
+
+animate();
